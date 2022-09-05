@@ -27,7 +27,7 @@ int main()
   	  {
          if(dist[it.first]> it.second + dist[x.second])
          {
-         	st.erase({dist[it.first],it.first});
+         	st.erase({dist[it.first],it.first})
          	dist[it.first] = it.second + dist[x.second];
          	st.insert({dist[it.first],it.first});
          }
